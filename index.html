@@ -1,0 +1,474 @@
+<!DOCTYPE html> <!-- Define o tipo de documento como HTML5 -->
+<html lang="pt-PT"> <!-- Define o idioma da página como Português de Portugal -->
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para suportar acentos e caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante que a página seja responsiva em dispositivos móveis -->
+    <title>VinMark - Comunicação e Marketing</title> <!-- Título que aparece na aba do navegador -->
+    <meta name="description" content="Consultoria de comunicação e marketing. Serviços especializados para alavancar o seu negócio."> <!-- Descrição para motores de busca (SEO) -->
+    
+    <!-- Pré-conexão para carregar fontes do Google mais rapidamente -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Importação da fonte 'Inter' do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o ficheiro de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER: Cabeçalho com Navegação e Logótipo -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Logótipo da empresa -->
+            <a href="#" class="logo">
+                <img src="VinMark.jpg" alt="VinMark Logo ">
+            </a>
+            
+            <!-- Menu de navegação -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <!-- Links de navegação que levam às secções da página -->
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <!-- Botão destacado para marcações -->
+                    <li><a href="#Marcacao" class="nav-link btn btn-primary">Marcações</a></li>
+                    <!-- Botão de Tema (Dark/Light Mode) -->
+                    <li>
+                        <button id="theme-toggle" class="theme-btn" aria-label="Alternar Tema">
+                            <span class="icon">🌙</span>
+                        </button>
+                    </li>
+                </ul>
+                
+                <!-- Botão do menu hambúrguer para dispositivos móveis -->
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- SECÇÃO HERO: A primeira coisa que o utilizador vê ao entrar no site -->
+        <section id="inicio" class="hero">
+<div class="hero-slider">
+            <div class="hero-track">
+                
+                <!-- SLIDE 1: BOAS-VINDAS (Original) -->
+                <div class="hero-slide active" id="hero-slide-main">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <h1>Comunicação que <span class="highlight">Transforma</span> o Seu Negócio</h1>
+                            <p>Estratégias de marketing e consultoria personalizada para elevar a sua marca ao próximo nível.</p>
+                            <div class="hero-btns">
+                                <a href="#Marcacao" class="btn btn-primary">Agendar Consultoria</a>
+                                <a href="#servicos" class="btn btn-outline">Nossos Serviços</a>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <!-- Imagem Original -->
+                             <div class="image-placeholder main-hero-img"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 2: GESTÃO DE REDES SOCIAIS -->
+                <div class="hero-slide" id="hero-slide-social">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <h1>Gestão de <span class="highlight-white">Redes Sociais</span></h1>
+                            <p>Engaje seu público e cresça sua presença online com conteúdo estratégico e gestão profissional.</p>
+                            <div class="hero-btns">
+                                <a href="#Marcacao" class="btn btn-white">Pedir Orçamento</a>
+                                <span class="price-tag">Desde 120.000 AKZ</span>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="service-icon-large">📲</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 3: BRANDING -->
+                <div class="hero-slide" id="hero-slide-branding">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <h1>Design e <span class="highlight-white">Identidade Visual</span></h1>
+                            <p>Logotipos memoráveis e marcas fortes que se destacam no mercado e ficam na mente do consumidor.</p>
+                            <div class="hero-btns">
+                                <a href="#Marcacao" class="btn btn-white">Criar Minha Marca</a>
+                                <span class="price-tag">Desde 80.000 AKZ</span>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="service-icon-large">🎨</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 4: TRÁFEGO PAGO (ADS) -->
+                <div class="hero-slide" id="hero-slide-ads">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <h1>Campanhas de <span class="highlight-white">Publicidade</span></h1>
+                            <p>Alcance o cliente certo na hora certa. Gestão de tráfego pago no Facebook, Instagram e Google.</p>
+                            <div class="hero-btns">
+                                <a href="#Marcacao" class="btn btn-white">Impulsionar Vendas</a>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="service-icon-large">📢</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SLIDE 5: CONSULTORIA -->
+                 <div class="hero-slide" id="hero-slide-consulting">
+                    <div class="container hero-container">
+                        <div class="hero-content">
+                            <h1><span class="highlight-white">Consultoria</span> Estratégica</h1>
+                            <p>Diagnóstico completo e planos de ação para otimizar os seus resultados e posicionamento.</p>
+                            <div class="hero-btns">
+                                <a href="#Marcacao" class="btn btn-white">Falar com Especialista</a>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <div class="service-icon-large">📈</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+             <!-- Controles do Slider -->
+             <div class="hero-controls">
+                <button class="hero-prev" aria-label="Slide Anterior">&#10094;</button>
+                <div class="hero-dots">
+                    <!-- Dots gerados via JS ou HTML estático -->
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+                <button class="hero-next" aria-label="Próximo Slide">&#10095;</button>
+            </div>
+        </div>
+        </section>
+
+        <!-- SECÇÃO SOBRE: Informações sobre a empresa (Missão, Visão e Valores) -->
+        <section id="sobre" class="section about">
+            <div class="container about-container">
+                <div class="about-image">
+                    <div class="image-placeholder"></div>
+                </div>
+                <div class="about-content">
+                    <h2>Sobre a Vinmark</h2>
+                    <p>Ajudar empresas a construir e fortalecer suas marcas com soluções criativas, inovadoras e tecnológicas.</p>
+                    
+                    <div class="about-grid">
+                        <div class="about-item">
+                            <h3>Missão</h3>
+                            <p>Ajudar empresas a construir e fortalecer suas marcas com soluções criativas, inovadoras e tecnológicas.</p>
+                        </div>
+                        <div class="about-item">
+                            <h3>Visão</h3>
+                            <p>Ser referência em branding e marketing digital em Angola, reconhecida pela qualidade, inovação e impacto positivo no mercado.</p>
+                        </div>
+                    </div>
+
+                    <div class="values-section">
+                        <h3>Nossos Valores</h3>
+                        <ul class="features-list">
+                            <li>✅ Ética e transparência</li>
+                            <li>✅ Criatividade</li>
+                            <li>✅ Inovação contínua</li>
+                            <li>✅ Foco no cliente</li>
+                            <li>✅ Trabalho em equipa</li>
+                            <li>✅ Responsabilidade social</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO DE SERVIÇOS: Lista os serviços oferecidos -->
+        <section id="servicos" class="section services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Nossos Serviços e Especializações</h2>
+                    <p>Soluções completas para as suas necessidades de marketing.</p>
+                </div>
+                
+                  <!-- Sub-secção: Serviços Oferecidos (SLIDER) -->
+                <div class="services-subsection">
+                    <h3>Serviços Oferecidos</h3>
+                    
+                    <div class="slider-wrapper" id="services-slider">
+                        <div class="slider-track card-track">
+                            <!-- Cartão de Serviço Individual -->
+                            <div class="service-card slider-slide">
+                                <div class="icon">📲</div> <!-- Ícone do serviço -->
+                                <h3>Gestão de Redes Sociais</h3>
+                                <p class="service-price">120.000 - 180.000 AKZ</p>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">🎨</div>
+                                <h3>Criação de Logotipo e identidade visual</h3>
+                                <p class="service-price">80.000 - 150.000 AKZ</p>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">📢</div>
+                                <h3>Campanhas Publicitárias</h3>
+                                <a href="#Marcacao" class="service-link">Consulte-nos</a>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">📈</div>
+                                <h3>Consultoria em Marketing Digital</h3>
+                                <a href="#Marcacao" class="service-link">Consulte-nos</a>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">🎥</div>
+                                <h3>Produção Audiovisual</h3>
+                                <p class="service-price">100.000 - 250.000 AKZ</p>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">🤝</div>
+                                <h3>Consultoria de Branding</h3>
+                                <p class="service-price">90.000 - 130.000 AKZ</p>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">🎓</div>
+                                <h3>Workshops e Palestras Online</h3>
+                                <a href="#Marcacao" class="service-link">Consulte-nos</a>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">🚀</div>
+                                <h3>Transição de Carreira e Branding Pessoal</h3>
+                                <a href="#Marcacao" class="service-link">Consulte-nos</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Controls for Services -->
+                         <div class="slider-controls">
+                            <button class="slider-prev" aria-label="Anterior">&#10094;</button>
+                            <button class="slider-next" aria-label="Próximo">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-secção: Serviços de Especialização (SLIDER) -->
+                <div class="services-subsection">
+                    <h3>Serviços de Especialização</h3>
+                    
+                    <div class="slider-wrapper" id="specializations-slider">
+                        <div class="slider-track card-track">
+                            <div class="service-card slider-slide">
+                                <div class="icon">🎯</div>
+                                <h3>Marketing Estratégico e Branding Corporativo</h3>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">🚦</div>
+                                <h3>Gestão de Tráfego Pago</h3>
+                                <p>Facebook, Instagram, Google Ads</p>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">🔍</div>
+                                <h3>SEO e Marketing de Conteúdo</h3>
+                            </div>
+                            <div class="service-card slider-slide">
+                                <div class="icon">💬</div>
+                                <h3>Comunicação Empresarial e Eventos</h3>
+                            </div>
+                             <div class="service-card slider-slide">
+                                <div class="icon">🌐</div>
+                                <h3>Websites e Landing Pages</h3>
+                            </div>
+                        </div>
+
+                         <!-- Controls for Specializations -->
+                         <div class="slider-controls">
+                            <button class="slider-prev" aria-label="Anterior">&#10094;</button>
+                            <button class="slider-next" aria-label="Próximo">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECÇÃO DE PLANOS E PREÇOS -->
+        <section id="pricing" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Planos e Preços</h2>
+                    <p>Investimento transparente e adaptado às suas necessidades.</p>
+                </div>
+
+                <!-- Tabela de preços -->
+                <div class="services-subsection">
+                    <h3>Expectativa de Preços</h3>
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Serviço</th>
+                                <th>Preço Médio (AKZ)</th>
+                                <th>Observações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Criação de Logotipo e Identidade Visual</td>
+                                <td>80.000 – 150.000</td>
+                                <td>Entrega em até 10 dias úteis</td>
+                            </tr>
+                            <tr>
+                                <td>Gestão de Redes Sociais</td>
+                                <td>120.000 – 180.000</td>
+                                <td>3 redes sociais</td>
+                            </tr>
+                            <tr>
+                                <td>Consultoria de Branding</td>
+                                <td>90.000 – 130.000</td>
+                                <td>Por projeto</td>
+                            </tr>
+                            <tr>
+                                <td>Produção Audiovisual</td>
+                                <td>100.000 – 250.000</td>
+                                <td>Por campanha</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Cartões de Planos Mensais -->
+                <div class="services-subsection">
+                    <h3>Cartões e Planos Mensais</h3>
+                    <div class="plans-grid">
+                        <!-- Plano Básico -->
+                        <div class="plan-card">
+                            <h3>Starter</h3>
+                            <div class="price">150.000 <span>AKZ/mês</span></div>
+                            <p class="description">Identidade visual básica e redes sociais iniciais.</p>
+                            <a href="#Marcacao" class="btn btn-outline btn-block">Escolher Starter</a>
+                        </div>
+                        <!-- Plano Destacado -->
+                        <div class="plan-card">
+                            <h3>Growth</h3>
+                            <div class="price">450.000 <span>AKZ/mês</span></div>
+                            <p class="description">Branding completo e gestão digital por 2 meses.</p>
+                            <a href="#Marcacao" class="btn btn-outline btn-block">Escolher Growth</a>
+                        </div>
+                        <!-- Plano Premium -->
+                        <div class="plan-card featured">
+                            <h3>Premium</h3>
+                            <div class="price">1.200.000 <span>AKZ/mês</span></div>
+                            <p class="description">Rebranding e campanhas audiovisuais completas.</p>
+                            <a href="#Marcacao" class="btn btn-outline btn-block">Escolher Premium</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Formas de Pagamento -->
+                <div class="services-subsection">
+                    <h3>Formas de Pagamento</h3>
+                    <div class="payment-methods">
+                        <ul class="payment-list">
+                            <li>💳 Transferência bancária</li>
+                            <li>💰 Depósito direto</li>
+                            <li>💳 Visa e Multicaixa</li>
+                            <li>📅 Parcelamento (>150k)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SECÇÃO DE MARCAÇÕES: Formulário de contacto -->
+        <!-- MODAL DE MARCAÇÕES (Escondido por padrão) -->
+        <div id="bookingModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="booking-wrapper">
+                    <div class="booking-header">
+                        <h2>Faça a sua Marcação</h2>
+                        <p>Pronto para começar? Agende uma reunião connosco.</p>
+                    </div>
+                    <!-- Início do Formulário -->
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required placeholder="Seu nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+244 9XX XXX XXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Serviço de Interesse</label>
+                            <select id="service" name="service">
+                                <option value="consultoria">Consultoria de Marketing</option>
+                                <option value="social">Gestão de Redes Sociais</option>
+                                <option value="branding">Branding</option>
+                                <option value="outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Data Preferencial</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem (Opcional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Conte-nos mais sobre o seu projeto"></textarea>
+                        </div>
+                        <!-- Botão de Envio do Formulário -->
+                        <button type="submit" class="btn btn-primary btn-block">Agendar Agora</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- RODAPÉ: Links finais e contactos -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="footer-logo">Vinmark<span class="dot">.</span></a>
+                <p>Elevando a sua comunicação ao próximo nível.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#Marcacao">Marcações</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>email@vinmark.com</li>
+                    <li>+351 123 456 789</li>
+                    <li>Lisboa, Portugal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Vinmark. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript para funcionalidades interativas -->
+    <script src="script.js"></script>
+</body>
+</html>
